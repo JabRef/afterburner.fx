@@ -103,5 +103,4 @@ nexusPublishing {
         }
     }
 }
-closeAndReleaseSonatypeStagingRepository.onlyIf { isReleaseVersion }
 
