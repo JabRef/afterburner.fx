@@ -21,7 +21,7 @@ jobs:
     - name: Build
       run: ./gradlew build
 
-    - name: Publish to Sonatype (for snapshots) or to Maven Central and GitHub Repository (for releases)
+    - name: Publish to Sonatype (for snapshots) or to Maven Central
       run: ./gradlew publish closeAndReleaseRepository
       env:
         MAVEN_USERNAME: ${{ secrets.OSSRH_USERNAME }}
