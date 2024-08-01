@@ -112,7 +112,7 @@ public class ViewLoader {
     public ViewLoader controller(Object root) {
         PresenterFactory factory = PresenterFactory.discover();
         fxmlLoader.setControllerFactory(type -> {
-            if (type == root.getClass()) {
+            if (type.isAssignableFrom(root.getClass())) {
                 factory.injectMembers(root, f -> null);
                 return root;
             } else {
