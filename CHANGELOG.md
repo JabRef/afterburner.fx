@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Changed
+- Removed unused `javafx.web` and `javafx.swing` modules from Gradle build to prevent unnecessary transitive dependencies.
+
 ## [2.0.0] - 2023-09-08
 
 ## Added
